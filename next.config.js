@@ -3,7 +3,7 @@ module.exports = {
     return [
       {
         source: "/:path*",
-        destination: process.env.REDIRECT_URL,
+        destination: process.env.REDIRECT_URL + ":path*",
         permanent: true,
       },
     ];
