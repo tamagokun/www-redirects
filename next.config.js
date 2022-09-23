@@ -2,7 +2,7 @@ module.exports = {
   async redirects() {
     return [
       {
-        source: "*",
+        source: "/*",
         destination: process.env.REDIRECT_URL,
         permanent: true,
       },
